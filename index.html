@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dnyaneshwari Productions — Netflix-style Portfolio</title>
+  <meta name="description" content="Cinematic portfolio of Dnyaneshwari Rode — Frontend Developer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="brand-anim">DNYANESHWARI PRODUCTIONS</div>
+      <div class="dots"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <!-- top nav -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="#hero">DNYANESHWARI</a>
+      <nav class="navlinks">
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button id="toggleSound" class="icon-btn" title="Toggle vibe">🎵</button>
+        <a class="resume" href="First Resume 1.pdf" download>Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- cinematic hero -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h1 class="title">Dnyaneshwari<br><span class="accent">Frontend Developer</span></h1>
+        <p class="tagline">I build cinematic UI — animations, microinteractions & delightful experiences.</p>
+
+        <!-- UPDATED CTA BUTTONS -->
+        <div class="hero-cta">
+          <a href="https://github.com/DnyaneshwariRode" target="_blank" class="btn primary social">
+            GitHub
+          </a>
+
+          <a href="https://www.linkedin.com/in/dnyaneshwari-rode/" target="_blank" class="btn ghost social">
+            LinkedIn
+          </a>
+        </div>
+
+        <p class="mini">Hover thumbnails to preview — click for details.</p>
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar-hero" id="avatarHero">
+          <img src="selfimage.jpg" alt="Dnyaneshwari" onerror="this.style.opacity=.12">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Trending Projects Row -->
+    <section id="projects" class="row-section">
+      <div class="container">
+        <h2 class="row-title">Trending Projects</h2>
+        <div class="row">
+          <button class="row-nav left" data-target="projectsRow">‹</button>
+          <div class="row-track" id="projectsRow">
+
+            <article class="thumb" tabindex="0" data-title="Plant Health Predictor" data-desc="Sensor-driven ML for plant monitoring." data-link="https://github.com/DnyaneshwariRode/Edunet_Foundation_Project">
+              <img src="/mnt/data/thumb1.jpg" alt="Plant project" onerror="this.style.opacity=.2">
+              <div class="thumb-meta">
+                <h3>Plant Health Predictor</h3>
+                <p>Sensor ML • Python • Flask</p>
+              </div>
+            </article>
+
+            <article class="thumb" tabindex="0" data-title="Image Gallery" data-desc="Responsive gallery with lazy loading & lightbox." data-link="#">
+              <img src="/mnt/data/thumb2.jpg" alt="Gallery" onerror="this.style.opacity=.2">
+              <div class="thumb-meta">
+                <h3>Image Gallery</h3>
+                <p>HTML • CSS • JS</p>
+              </div>
+            </article>
+
+            <article class="thumb" tabindex="0" data-title="Classroom UI" data-desc="Admin dashboard & responsive sidebar UI." data-link="#">
+              <img src="/mnt/data/thumb3.jpg" alt="Classroom app" onerror="this.style.opacity=.2">
+              <div class="thumb-meta">
+                <h3>Classroom App UI</h3>
+                <p>UI / UX • Responsive</p>
+              </div>
+            </article>
+
+            <article class="thumb" tabindex="0" data-title="Calculator UI" data-desc="Sleek calculator with keyboard support." data-link="#">
+              <img src="/mnt/data/thumb4.jpg" alt="Calculator" onerror="this.style.opacity=.2">
+              <div class="thumb-meta">
+                <h3>Calculator</h3>
+                <p>Vanilla JS</p>
+              </div>
+            </article>
+
+          </div>
+          <button class="row-nav right" data-target="projectsRow">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Row -->
+    <section id="skills" class="row-section">
+      <div class="container">
+        <h2 class="row-title">Skills</h2>
+        <div class="row small">
+          <div class="skill-poster">HTML</div>
+          <div class="skill-poster">CSS</div>
+          <div class="skill-poster">JavaScript</div>
+          <div class="skill-poster">React</div>
+          <div class="skill-poster">Python</div>
+          <div class="skill-poster">Git</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="row-section">
+      <div class="container">
+        <h2 class="row-title">Certificates</h2>
+
+        <div class="row">
+          <button class="row-nav left" data-target="certRow">‹</button>
+          <div class="row-track" id="certRow">
+
+            <article class="thumb cert" tabindex="0"
+              data-title="Python for Data Science"
+              data-issuer="NPTEL"
+              data-desc="Python for Data Science — core libraries & basics."
+              data-file="/mnt/data/Python for Data Science.pdf">
+              <img src="Python for Data Science.pdf" alt="Python certificate" onerror="this.style.opacity=.08">
+              <div class="thumb-meta">
+                <h3>Python for Data Science</h3>
+                <p>NPTEL</p>
+              </div>
+            </article>
+
+            <article class="thumb cert" tabindex="0"
+              data-title="Programming in Java"
+              data-issuer="NPTEL"
+              data-desc="Programming in Java — core Java concepts."
+              data-file="/mnt/data/Programming In Java.pdf">
+              <img src="Programming In Java.pdf" alt="Java certificate" onerror="this.style.opacity=.08">
+              <div class="thumb-meta">
+                <h3>Programming in Java</h3>
+                <p>NPTEL</p>
+              </div>
+            </article>
+
+            <article class="thumb cert placeholder" tabindex="0"
+              data-title="Oracle Cloud Infrastructure"
+              data-issuer="Oracle"
+              data-desc="(Upload the certificate PDF to enable preview)"
+              data-file="">
+              <img src="/mnt/data/cert_placeholder.jpg" alt="Oracle certificate placeholder" onerror="this.style.opacity=.08">
+              <div class="thumb-meta">
+                <h3>Oracle Cloud Infrastructure</h3>
+                <p>Oracle</p>
+              </div>
+            </article>
+
+          </div>
+          <button class="row-nav right" data-target="certRow">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Row -->
+    <section id="journey" class="row-section">
+      <div class="container">
+        <h2 class="row-title">Journey</h2>
+        <div class="row small">
+          <div class="episode">2023 — Started Engineering</div>
+          <div class="episode">2024 — Frontend Projects</div>
+          <div class="episode">2025 — Data & AI</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Continue Exploring -->
+    <section id="continue" class="row-section">
+      <div class="container">
+        <h2 class="row-title">Continue Exploring</h2>
+        <div class="row small">
+          <div class="episode">Plant Health Predictor — In progress</div>
+          <div class="episode">Portfolio Redesign — Live</div>
+          <div class="episode">Learning React — Ongoing</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="row-section">
+      <div class="container">
+        <h2 class="row-title">Contact</h2>
+        <form id="contactForm" class="contact-grid">
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <textarea name="message" rows="4" placeholder="Message" required></textarea>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="container">
+      <small>© <span id="year"></span> Dnyaneshwari Productions</small>
+    </div>
+  </footer>
+
+  <!-- modal viewer -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button id="modalClose" class="close">✕</button>
+      <div class="modal-body">
+        <img id="modalImg" src="" alt="" onerror="this.style.opacity=.2">
+        <div class="modal-info">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc"></p>
+          <a id="modalLink" class="btn ghost" target="_blank" rel="noopener">View Code / Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- custom cursor & spotlight -->
+  <div id="cursorDot"></div>
+  <div id="cursorRing"></div>
+  <div id="spotlight"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
